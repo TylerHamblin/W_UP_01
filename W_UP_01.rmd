@@ -82,4 +82,7 @@ The p-value being an exceedingly small number shows that there is a strong stati
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
+$H_0$ = Position has no effect on pushups
+$H_A$ = Position does have an effect on pushups
 
+Using the help of ChatGPT generated code I was able to decipher the relationship between line and skill football players and the amount of pushups they were able to execute based on their position. Through a box plot, numerical data, and finally a T test it was clear that the data disproved $H_0$ and left us with $H_A$ as a reasonable inference about this relationship.
