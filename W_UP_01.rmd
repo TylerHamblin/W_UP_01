@@ -41,9 +41,30 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 
 <!--Graphical results here. Make sure to show your code. Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too. Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r include=TRUE,echo=FALSE}
+ggplot(data = mydata, aes(x = pushups, y = position)) +
+  geom_boxplot()+
+  labs(title = "Pushups by Position", x = "pushups", y = "position" ) +
+  coord_flip() + 
+  theme(plot.title = element_text(size = 18, hjust = 0.5)) #Adjust title size and position
+```
+
+In looking at the box plot above there is a comparison between skill football players and line football players and the amount of pushups both groups can achieve. 
+
+Being that the skill group sits higher on the chart it shows that they tracked a greater average number of pusbups when compared to the line players. 
+
+The 25th percentile of skill players scored higher than the 75th percentile of line players suggesting that skill players are able to do more pushups. 
+
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+favstats(pushups~position,data=mydata)
+```
+
+The average number of pushups that a skill player can do is about 3 times greater than that of which a line player can do. 
 
 ## Inferential Results
 
